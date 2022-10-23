@@ -1,0 +1,38 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/my/my",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "云视",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#ffff",
+        "selectedColor": "#1296db",
+        "list": [
+          {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "selectedIconPath": "/icon/set/首页.png",
+            "iconPath": "/icon/no/首页.png"
+          },
+          {
+            "pagePath": "pages/my/my",
+            "text": "日志",
+            "selectedIconPath": "/icon/set/我的.png",
+            "iconPath": "/icon/no/我的.png"
+          }
+        ]
+      },
+      "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+      },
+      "debug": true,
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
