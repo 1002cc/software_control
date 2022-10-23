@@ -4,29 +4,29 @@
 }
 /*显示天气地点*/
 .header {
-  background-color:#4abef4;
+  background-color: #4abef4;
   color: white;
   padding: 15rpx 30rpx;
   border-radius: 20rpx;
 }
 .one {
   display: flex;
-  margin: 10rpx ;
-  justify-content: space-between; 
+  margin: 10rpx;
+  justify-content: space-between;
 }
-.one text{
+.one text {
   height: 30rpx;
   padding-bottom: 15rpx;
 }
 .two {
-   display: flex;
+  display: flex;
   justify-content: space-between;
 }
-.two text{
+.two text {
   font-size: 52rpx;
 }
 
-.three text{
+.three text {
   font-size: 22rpx;
 }
 /*显示检测到的信息*/
@@ -35,7 +35,7 @@
   display: flex;
   justify-content: space-between;
 }
-.date-icon image{
+.date-icon image {
   width: 107rpx;
   height: 107rpx;
 }
@@ -47,8 +47,8 @@
   height: 160rpx;
   border-radius: 40rpx;
   box-shadow: rgb(140, 221, 231) 0 0 0rpx;
-  padding: 0rpx  20rpx;
-  margin:0rpx 15rpx 10rpx 15rpx;  /* 上右下左 */
+  padding: 0rpx 20rpx;
+  margin: 0rpx 15rpx 10rpx 15rpx; /* 上右下左 */
 }
 .date-icon {
   display: flex;
@@ -65,7 +65,7 @@
   font-size: 50rpx;
 }
 
-.date-text1{
+.date-text1 {
   font-size: 35rpx;
 }
 
@@ -76,7 +76,7 @@
 .input_data {
   display: flex;
   height: 100%;
-  width:90%;
+  width: 90%;
   margin: 20px;
   border: 3rpx solid #82e8fa;
   border-radius: 10rpx;
@@ -92,7 +92,7 @@
 }
 
 .input {
-  margin:  10rpx 10rpx;
+  margin: 10rpx 10rpx;
 }
 
 .input_data .vertificate {
@@ -103,58 +103,56 @@
   font-family: PingFangSC-Regular;
   font-size: 32rpx;
   letter-spacing: 0;
-/*   line-height: 60rpx; */
+  /*   line-height: 60rpx; */
   text-align: center;
   color: #34c9c3;
- }
+}
 
 .vertificate text {
   color: rgb(255, 255, 255);
- }
-  
- /* 弹窗灯其他的设置
+}
+
+/* 弹窗灯其他的设置
     默认全开全关
     点击icon弹出其他灯的设置
  */
- .pop_up_lamp{
-    border-radius: 30rpx;
-    width:75%;
-    height: 40%;
-    background:rgb(113, 192, 238);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    border: 1rpx solid rgb(202, 202, 202);
+.pop_up_lamp {
+  border-radius: 30rpx;
+  width: 75%;
+  height: 40%;
+  background: rgb(113, 192, 238);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 1rpx solid rgb(202, 202, 202);
 }
 
-.LED_TEXT{
-    margin-left: 20rpx;
-    font-size: 30px; 
-    color: white;
+.LED_TEXT {
+  margin-left: 20rpx;
+  font-size: 30px;
+  color: white;
 }
 
-.pop_up_lamp text{
-    margin-left: 20rpx;
-    color: white;
-    font-size: 20px; 
+.pop_up_lamp text {
+  margin-left: 20rpx;
+  color: white;
+  font-size: 20px;
 }
 
 .TEXT_LED {
-    margin-top: 25rpx;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 25rpx;
+  display: flex;
+  justify-content: space-between;
 }
 
-
 .btn_close {
-  border-radius:50rpx 50rpx 0 0;
+  border-radius: 50rpx 50rpx 0 0;
   width: 100rpx;
   vertical-align: middle;
   position: absolute;
   bottom: 0;
-  right: 110rpx; 
+  right: 110rpx;
 }
-

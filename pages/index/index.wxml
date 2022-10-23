@@ -1,10 +1,10 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
     <view class="header">
         <view class="one">
             <text>空气质量:优</text>
             <picker mode="region" bingchange="regionChange">
-            <text>{{region}}</text>
+                <text>{{region}}</text>
             </picker>
         </view>
         <view class="two">
@@ -16,9 +16,9 @@
         </view>
     </view>
     <view class="input_data">
-            <text class="text-ti">MQTT</text>
-            <input class="input" bindinput="gettext" placeholder="请输入:"  value='{{getinputtext}}'></input>
-            <view class='vertificate' bindtap="getVerificationCode">发送</view>
+        <text class="text-ti">MQTT</text>
+        <input class="input" bindinput="gettext" placeholder="请输入:" value='{{getinputtext}}'></input>
+        <view class='vertificate' bindtap="getVerificationCode">发送</view>
     </view>
     <view class="body">
         <view class="body-wrapper">
@@ -33,7 +33,7 @@
             </view>
             <view class="date">
                 <view class="date-icon">
-                <image src="/icon/icon/humi.png"></image>
+                    <image src="/icon/icon/humi.png"></image>
                 </view>
                 <view class="date-text">
                     <view class="date-title">湿度</view>
@@ -53,32 +53,32 @@
             </view>
             <view class="date">
                 <view class="date-icon" bindtap="openDialog">
-                <image src="/icon/icon/lamp.png"></image>
+                    <image src="/icon/icon/lamp.png"></image>
                 </view>
                 <view class="date-text">
                     <view class="date-title">灯</view>
                     <view class="body-view">
-                        <switch checked="{{switch1}}" bindchange="switch1Change" color="#1296db"/> 
+                        <switch checked="{{switch1}}" bindchange="switch1Change" color="#1296db" />
                     </view>
                 </view>
             </view>
             <view class="pop_up_lamp" style="display: {{firstShow?'block':'none'}};">
-                <text class="LED_TEXT" >LED灯设置</text>
+                <text class="LED_TEXT">LED灯设置</text>
                 <view class="TEXT_LED">
-                    <text >LED1</text>
-                    <switch checked="{{switch_led1}}" bindchange="switch_led1Change" color="#1296db"/> 
-                    <text >LED2</text>
-                    <switch checked="{{switch_led2}}" bindchange="switch_ed2Change" color="#1296db"/> 
+                    <text>LED1</text>
+                    <switch checked="{{switch_led1}}" bindchange="switch_led1Change" color="#1296db" />
+                    <text>LED2</text>
+                    <switch checked="{{switch_led2}}" bindchange="switch_ed2Change" color="#1296db" />
                 </view>
                 <view class="TEXT_LED">
-                    <text >LED3</text>
-                    <switch checked="{{switch_led3}}" bindchange="switch_led3Change" color="#1296db"/> 
-                    <text >LED4</text>
-                    <switch checked="{{switch_led4}}" bindchange="switch_led4Change" color="#1296db"/>
-                </view> 
+                    <text>LED3</text>
+                    <switch checked="{{switch_led3}}" bindchange="switch_led3Change" color="#1296db" />
+                    <text>LED4</text>
+                    <switch checked="{{switch_led4}}" bindchange="switch_led4Change" color="#1296db" />
+                </view>
                 <view class="pwm_init">
-                    <text class="LED_TEXT" >PWM调节亮度</text>
-                    <slider class="slider_s=init"></slider>   
+                    <text class="LED_TEXT">PWM调节亮度</text>
+                    <slider class="slider_s=init"></slider>
                 </view>
                 <view class="close_p">
                     <button class="btn_close" bindtap="close_obj">关闭</button>
@@ -93,7 +93,7 @@
                 <view class="date-text">
                     <view class="date-title">警报</view>
                     <view class="body-view">
-                        <switch  checked="{{switch2}}" bindchange="switch2Change" color="#1296db"/> 
+                        <switch checked="{{switch2}}" bindchange="switch2Change" color="#1296db" />
                     </view>
                 </view>
             </view>
@@ -109,4 +109,3 @@
         </view>
     </view>
 </view>
-
