@@ -1,0 +1,16 @@
+<!--pages/bluetooth/bluetooth.wxml-->
+<view class="contentview">
+	<view></view>
+	<button type="primary" bindtap='openadapter'>打开适配器</button>
+	<button type="primary" bindtap='closeadapter'>关闭适配器</button>
+	<button type="primary" bindtap='opendiscovery'>开始搜索</button>
+	<button type="primary" bindtap='closediscovery'>关闭搜索</button>
+	<button type="primary" bindtap='getdevice'>获取设备</button>
+	<button type="primary" bindtap='getconnecteddevice'>获取已连接设备</button>
+	<button type="primary" bindtap='connecteddevice'>连接我的设备</button>
+	<button type="primary" bindtap='getservice'>获取服务</button>
+	<button type="primary" bindtap='getcharacteristics'>获取特征值</button>
+	<button type="primary" bindtap='startread'>读取值</button>
+	<button type="primary" bindtap='startnotify'>开启notify</button>
+	<button type="primary" bindtap='startwrite'>写数据</button>
+</view>

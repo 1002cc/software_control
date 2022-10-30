@@ -1,0 +1,5 @@
+/* pages/bluetooth/bluetooth.wxss */
+.button_ss{
+	
+	margin: 20rpx;
+}

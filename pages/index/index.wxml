@@ -3,8 +3,8 @@
     <view class="header">
         <view class="one">
             <text>空气质量:优</text>
-            <picker mode="region" bingchange="regionChange">
-                <text>{{region}}</text>
+            <picker mode="region" bindchange="regionChange" value="{{region}}">
+                <text>{{region[0]}}-{{region[1]}}-{{region[2]}}</text>
             </picker>
         </view>
         <view class="two">
@@ -44,6 +44,15 @@
         <view class="body-wrapper">
             <view class="date">
                 <view class="date-icon">
+                    <image src="/icon/icon/lsense.png"></image>
+                </view>
+                <view class="date-text">
+                    <view class="date-title">光照强度</view>
+                    <view class="date-value">{{lsense}}Lx</view>
+                </view>
+            </view>
+            <view class="date">
+                <view class="date-icon">
                     <image src="/icon/icon/distance.png"></image>
                 </view>
                 <view class="date-text">
@@ -51,6 +60,8 @@
                     <view class="date-value">{{gap}}m</view>
                 </view>
             </view>
+        </view>
+        <view class="body-wrapper">
             <view class="date">
                 <view class="date-icon" bindtap="openDialog">
                     <image src="/icon/icon/lamp.png"></image>
@@ -59,6 +70,17 @@
                     <view class="date-title">灯</view>
                     <view class="body-view">
                         <switch checked="{{switch1}}" bindchange="switch1Change" color="#1296db" />
+                    </view>
+                </view>
+            </view>
+            <view class="date">
+                <view class="date-icon">
+                    <image src="/icon/icon/wtn.png"></image>
+                </view>
+                <view class="date-text">
+                    <view class="date-title">警报</view>
+                    <view class="body-view">
+                        <switch checked="{{switch2}}" bindchange="switch2Change" color="#1296db" />
                     </view>
                 </view>
             </view>
@@ -78,31 +100,19 @@
                 </view>
                 <view class="pwm_init">
                     <text class="LED_TEXT">PWM调节亮度</text>
-                    <slider class="slider_s=init"></slider>
+                    <slider class="slider_s=init" selected-color="#34c9c3" show-value></slider>
                 </view>
                 <view class="close_p">
                     <button class="btn_close" bindtap="close_obj">关闭</button>
                 </view>
             </view>
         </view>
-        <view class="body-wrapper">
-            <view class="date">
-                <view class="date-icon">
-                    <image src="/icon/icon/wtn.png"></image>
-                </view>
-                <view class="date-text">
-                    <view class="date-title">警报</view>
-                    <view class="body-view">
-                        <switch checked="{{switch2}}" bindchange="switch2Change" color="#1296db" />
-                    </view>
-                </view>
-            </view>
-            <view class="date">
+        <view class="body-wrapper-all">
+            <view class="date_all">
                 <view class="date-icon">
                     <image src="/icon/icon/message.png"></image>
                 </view>
-                <view class="date-text">
-                    <view class="date-title">信息</view>
+                <view class="date-text_all">
                     <view class="date-text1">{{getmessage}}</view>
                 </view>
             </view>

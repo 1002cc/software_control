@@ -5,6 +5,8 @@
 /*显示天气地点*/
 .header {
   background-color: #4abef4;
+  width: 85%;
+  height: 200rpx;
   color: white;
   padding: 15rpx 30rpx;
   border-radius: 20rpx;
@@ -35,6 +37,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+.body-wrapper-all{
+  background-color:  #c2e9fb;
+  width: 85%;
+  height: 180rpx;
+  //padding: 15rpx 30rpx;
+  border-radius: 30rpx;
+}
+
 .date-icon image {
   width: 107rpx;
   height: 107rpx;
@@ -96,20 +107,14 @@
 }
 
 .input_data .vertificate {
-  width: 326rpx;
-  border-bottom: 1px solid #ddd;
+  width: 85%;
   height: 65rpx;
   padding-left: 20rpx;
   font-family: PingFangSC-Regular;
   font-size: 32rpx;
   letter-spacing: 0;
-  /*   line-height: 60rpx; */
   text-align: center;
   color: #34c9c3;
-}
-
-.vertificate text {
-  color: rgb(255, 255, 255);
 }
 
 /* 弹窗灯其他的设置
@@ -155,4 +160,15 @@
   position: absolute;
   bottom: 0;
   right: 110rpx;
+}
+
+.wx-slider-step {
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  background: linear-gradient(to right, #4169E1 0%, #00FFFF 100%);
+  border-radius: 5px;
+  z-index: 1;
+  top: 0px;
+ 
 }
