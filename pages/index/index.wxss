@@ -42,7 +42,7 @@
   background-color:  #c2e9fb;
   width: 85%;
   height: 180rpx;
-  //padding: 15rpx 30rpx;
+  padding: 15rpx 30rpx;
   border-radius: 30rpx;
 }
 
