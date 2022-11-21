@@ -8,6 +8,8 @@ Page({
     humidity: '10',
     gap: '22',
     lsense: '100',
+    mq:'300',
+    tf:'800',
     text: "今天空气质量良好,出行请带好口罩",
     weather: '晴',
     region: ['广东省', '广州市', '从化区'],
@@ -79,11 +81,13 @@ Page({
       rec_data=JSON.parse(message)
       console.log(message.toString())
       that.setData({
-        //getmessage: message.toString(),
+        getmessage: rec_data.getmessage,
         temp:rec_data.temp,
         humidity: rec_data.humidity,
         gap:rec_data.gap,
-        lsense: rec_data.lsense
+        lsense: rec_data.lsense,
+        mq:rec_data.mq,
+        tf:rec_data.tf
       })
     })
     client.on('reconnect', (error) => {
@@ -142,7 +146,7 @@ Page({
     console.log(e.detail.value)
     if (e.detail.value) {
       console.log("打开灯")
-      client.publish('/iot/1879/chen/upload/led/', '{"target":"ledall","value":1}',function(err){
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"led":1}}',function(err){
         if(!err)
           console.log("发送成功-打开所有灯")
         }
@@ -150,7 +154,7 @@ Page({
       
     } else {
       console.log("关闭灯")
-      client.publish('/iot/1879/chen/upload/led/', '{"target":"ledall","value":0}',function(err){
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"led":0}',function(err){
         if(!err)
           console.log("发送成功-打开所有灯")
         }
@@ -162,11 +166,13 @@ Page({
     console.log(e.detail.value)
     if (e.detail.value) {
       console.log("打开LED1")
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"led":2}')
       this.setData({
         /*  switch1:false */
       })
     } else {
       console.log("关闭LED1")
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"led":6}')
       this.setData({
         /* switch1:true */
       })
@@ -176,11 +182,13 @@ Page({
     console.log(e.detail.value)
     if (e.detail.value) {
       console.log("打开LED2")
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"led":3}')
       this.setData({
         /*  switch1:false */
       })
     } else {
       console.log("关闭LED2")
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"led":7}')
       this.setData({
         /* switch1:true */
       })
@@ -190,11 +198,13 @@ Page({
     console.log(e.detail.value)
     if (e.detail.value) {
       console.log("打开LED3")
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"led":4}')
       this.setData({
         /*  switch1:false */
       })
     } else {
       console.log("关闭LED3")
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"led":8}')
       this.setData({
         /* switch1:true */
       })
@@ -204,11 +214,13 @@ Page({
     console.log(e.detail.value)
     if (e.detail.value) {
       console.log("打开LED4")
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"led":5}')
       this.setData({
         /*  switch1:false */
       })
     } else {
       console.log("关闭LED4")
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"led":9}')
       this.setData({
         /* switch1:true */
       })
@@ -218,17 +230,16 @@ Page({
     console.log(e.detail.value)
     if (e.detail.value) {
       console.log("打开警报")
-      client.publish('/iot/1879/chen/upload/beep/', '0')
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"beep":1}')
       this.setData({
         /*  switch1:false */
       })
     } else {
       console.log("关闭警报")
-      client.publish('/iot/1879/chen/upload/beep/', '0')
+      client.publish('/iot/1879/chen/upload/', '{"user":"chen","params":{"beep":0}')
       this.setData({
         /* switch1:true */
       })
     }
   }
-
 })

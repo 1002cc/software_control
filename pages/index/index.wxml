@@ -63,6 +63,26 @@
         </view>
         <view class="body-wrapper">
             <view class="date">
+                <view class="date-icon">
+                    <image src="/icon/icon/mq.png"></image>
+                </view>
+                <view class="date-text">
+                    <view class="date-title">烟雾报警</view>
+                    <view class="date-value">{{mq}}mv</view>
+                </view>
+            </view>
+            <view class="date">
+                <view class="date-icon">
+                    <image src="/icon/icon/tf.png"></image>
+                </view>
+                <view class="date-text">
+                    <view class="date-title">火焰报警</view>
+                    <view class="date-value">{{tf}}mv</view>
+                </view>
+            </view>
+        </view>
+        <view class="body-wrapper">
+            <view class="date">
                 <view class="date-icon" bindtap="openDialog">
                     <image src="/icon/icon/lamp.png"></image>
                 </view>
@@ -108,13 +128,11 @@
             </view>
         </view>
         <view class="body-wrapper-all">
-            <view class="date_all">
-                <view class="date-icon">
-                    <image src="/icon/icon/message.png"></image>
-                </view>
-                <view class="date-text_all">
-                    <view class="date-text1">{{getmessage}}</view>
-                </view>
+            <view class="date-icon">
+                <image src="/icon/icon/message.png"></image>
+            </view>
+            <view class="date-text_all">
+                <view class="date-text1">{{getmessage}}</view>
             </view>
         </view>
     </view>

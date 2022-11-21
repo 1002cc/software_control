@@ -2,8 +2,7 @@
     "pages": [
         "pages/index/index",
         "pages/my/my",
-        "pages/logs/logs",
-        "pages/bluetooth/bluetooth"
+        "pages/logs/logs"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -20,12 +19,6 @@
             "text": "首页",
             "selectedIconPath": "/icon/set/首页.png",
             "iconPath": "/icon/no/首页.png"
-          },
-          {
-            "pagePath": "pages/bluetooth/bluetooth",
-            "text": "蓝牙通信",
-            "selectedIconPath": "/icon/set/蓝牙.png",
-            "iconPath": "/icon/no/蓝牙.png"
           },
           {
             "pagePath": "pages/my/my",

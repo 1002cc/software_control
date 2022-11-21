@@ -41,9 +41,13 @@
 .body-wrapper-all{
   background-color:  #c2e9fb;
   width: 85%;
-  height: 180rpx;
-  padding: 15rpx 30rpx;
+  height: 100rpx;
+  padding: 30rpx 30rpx;
   border-radius: 30rpx;
+  text-align: center;   /* 左右居中 */
+  position: absolute;
+  top: 50%;
+  transform: translateY(340%);
 }
 
 .date-icon image {
